@@ -1,5 +1,7 @@
 # Lab 05: ES Modules Refactoring the Token Counter 🗂️
 
+<img src="./main.png" alt="Preview of the LLM Model Cards page" style="max-width: 500px; width: 100%;">
+
 ## Introduction
 
 In Lab 04 you built a live token counter. It works. But every line of code utility functions, history management, and DOM logic lives inside a single file: `tokenCounter.js`. As projects grow, this becomes a serious problem. A 50-line file is easy to read. A 500-line file is not. A 5,000-line file is a liability.
