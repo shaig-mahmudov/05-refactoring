@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">DOM Lab 04</p>
+      <h1>Token Counter</h1>
+    </div>
+    <img src="./main.png" alt="Pixel art coding workspace" class="header-art">
+  </header>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#tokenCounter">Counter</a>
+    <a href="#history-list">History</a>
+  </nav>
+
+  <main>
+    <section id="tokenCounter" class="counter-panel">
+      <div class="section-heading">
+        <h2>Token Counter</h2>
+        <p>Type or paste text below to estimate characters, words, and tokens in real time.</p>
+      </div>
+
+      <textarea
+        id="inputText"
+        rows="10"
+        placeholder="Paste your text here..."
+        aria-label="Text to analyze"></textarea>
+
+      <div id="stats" aria-live="polite">
+        <span id="stat-chars">Characters: 0</span>
+        <span id="stat-words">Words: 0</span>
+        <span id="stat-tokens">Estimated tokens: 0</span>
+      </div>
+
+      <div class="actions">
+        <button id="save-btn" type="button" disabled>Save Snapshot</button>
+        <button id="clear-btn" type="button">Clear History</button>
+      </div>
+
+      <div class="history-header">
+        <h3>Saved Snapshots</h3>
+        <p id="max-tokens">Highest token count: 0</p>
+      </div>
+
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with DOM selectors, events, objects, arrays, and rendered history.</p>
+  </footer>
+
+  <script type="module" src="dom.js"></script>
+</body>
+</html>
